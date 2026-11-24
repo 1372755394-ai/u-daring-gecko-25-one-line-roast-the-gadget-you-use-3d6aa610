@@ -23,6 +23,7 @@ def main() -> None:
     assert 1 <= len(text) <= 200, f"roast is {len(text)} characters"
     assert text.strip(), "roast must not be only whitespace"
     (out_dir / "entry.txt").write_text(text, encoding="utf-8")
+    print(text)
 
 
 if __name__ == "__main__":
